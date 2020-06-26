@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Bootanimation and gapps world
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -46,3 +46,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
 
 BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+
+# Official-ify
+BOOTLEGGERS_BUILD_TYPE := Fan-Edition
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+   DEVICE_MAINTAINERS="IKAR0SDEV"

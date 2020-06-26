@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_whyred.mk
+    $(LOCAL_DIR)/bootleg_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_whyred-user \
-    havoc_whyred-userdebug \
-    havoc_whyred-eng
+    bootleg_whyred-user \
+    bootleg_whyred-userdebug \
+    bootleg_whyred-eng
 
